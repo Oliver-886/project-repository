@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Process</title>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+#cus{text-align: center;font-family: 'Montserrat', sans-serif;font-size: small;}
+#cus:hover{color: lightgray;}
+
+        fieldset.set{margin-left:300px;margin-right: 300px;
+        border:1px solid lightgray;font-family: 'Montserrat', sans-serif;}
+
+        input{margin:5px}l
+        #comment{border-top: 50px;}
+        #review{font-weight: bold;}
+        #info{font-weight: bold;}
+        
+.header{width:100%;height: 40px; display: block;background-color: black;}
+.promotion ul{height: 100% ;color: black;float: left;}
+.promotion a li{height: 100%;display: table; float: left;padding: 10px 70px; color: white;text-align: center;margin-left: 400px;letter-spacing: 2px;}
+
+h1{text-align: center;font-size: 60px;height: 100%;padding-top: 0px; margin-top: 0rem;font-family: 'Montserrat', sans-serif;}
+li:hover{background-color: lightgray;}
+#green{color:green;}
+.red{color: red;}
+.bold{font-weight: bold;}
+
+.navigation ul{height: 70%; color: black; margin-left: 50px;}
+.navigation a li{height: 70%;display:block;float:left; padding:0px 12px; position: relative; text-align: center;color: black;font-family: 'Montserrat', sans-serif;}
+#nav{width:100%;text-align: center;margin-left:450px;margin-right: auto;margin-top: -30px;}
+li.blue:hover{color: blue;}
+ button{background-color: white;border: white 0px ;}
+
+li.green:hover{color:greenyellow}
+#brown:hover{color:brown}
+#red:hover{color: red;}
+    </style>
+      
+</head>
+<body>
+ 
+    <ul class="promotion">
+        <a ><li>Welcome to my<span class=bold>  Shopify </span> Journey!  Enjoy <span class=red>50%</span>  off Storewide Discount (JK Lol)</li></a>
+       
+    </ul>
+    <div class="header"><th color=white></th></div>
+
+    <h1>Shopify Journey</h1>
+<div id=nav><ul class=navigation>
+    <a href="index.html"><li id=home>Home</li></a>
+    <a href="webdesign.html"><li id=web >Web Design</li></a>
+    <a href="marketing.html"><li id=marketing>Marketing & Promotion </li></a>
+    <a href="traffic.html"><li id=drive>Driving Traffic</span></li></a>
+    <a href="contactpage.html"><li id=contact>Contact</span></li></a>
+    <a href="sitemap.html"><li id=sitemap>Sitemap</span></li></a>
+</ul></div>
+
+  <div> <button><img src="search.png"height=20px></button>
+
+    <script>
+
+        function click(){
+            console.log("Done");
+            let userInput = prompt("Which page would you like to go?");}
+             document.querySelector("button").onclick=function(){click();}
+            if (userInput==="contact"){document.getElementById("contact").href="contactpage.html"}
+             
+    </script>
+
+   
+</body>
+</html>
+<hr>
+
+<form>
+    <caption id=caption><h1 id=cus>Customer Feedback</h1></caption>
+
+    <fieldset class=set>
+        <legend id=info>Your Information:</legend>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"placeholder="Enter your name here"><br>
+        
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"placeholder="Enter your email here">
+        
+    
+      </fieldset><br>
+
+      <fieldset class=set>
+        <legend id=review>Your Review:</legend>
+
+        <div id=apple>
+            <div>
+                <label for="apple product">Which page needs improvement?</label>
+                
+                <select name="product" id="product-select">
+                <option value="">Select page</option>
+                <option value="home">Home</option>
+                <option value="marketing">Marketing</option>
+                <option value="webdesign">Web design</option>
+                <option value="traffic">driving traffic</option>
+                </select>
+        </div>
+        <div>
+            What do you think of this Website? <br>
+            <label>Great
+                <input type="radio" name="great" value="great" >
+            </label>
+            <label>Awesome 
+                <input type="radio" name="awesome" value="awesome" >
+            </label>
+            <label>Good
+                <input type="radio" name="good" value="good">
+            </label>
+        </div>
+        <div>
+            <label>Comments:<br>
+                <textarea rows="4"cols="50" name="comment" form="userform">Enter text here...</textarea>
+
+            </label>
+        </div><br>
+        <div> 
+            <input type="checkbox" id="signup" name="signup" value="signup"
+            checked />
+            <label for="Tables">Sign me up for email updates</label>
+        </div>
+        <button type="submit" name="submit-button">
+            SUBMIT
+        </button>
+        <button type="reset" name="reset=button">RESET</button>
+
+        <p id=text><h3>Contact me for further infomation</h3>
+             <p><a href="mailto:qyang1@babson.edu">Email </a></p>
+</body>
+</html>
