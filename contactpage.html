@@ -44,7 +44,10 @@ li:hover{background-color: lightgray;}
 .navigation ul{height: 70%; color: black; margin-left: 50px;}
         .navigation a li{height: 70%;display:block;float:left; padding:0px 12px; position: relative; text-align: center;color: black;}
         #nav{width:100%;text-align: center;margin-left:300px;margin-top: -30px;font-family: 'Montserrat', sans-serif;position:absolute;}
-        button{background-color: white;border: white  ;}
+        button{margin-top: 30px; background-color: white;}
+        #firstbtn{background-color: white;border:black  ;margin-left: 20px;}
+        #secondbtn{background-color: white;border:black  ;padding-left: 20px;}
+        
 
     </style>
       
@@ -130,21 +133,23 @@ li:hover{background-color: lightgray;}
         </div>
         <div>
             <label>Comments:<br>
-                <textarea rows="4"cols="50" name="comment" form="userform">Enter text here...</textarea>
+                <textarea rows="4"cols="50" name="comment" form="userform"> Enter text here...</textarea>
 
             </label>
+        
+
         </div><br>
         <div> 
             <input type="checkbox" id="signup" name="signup" value="signup"
             checked />
             <label for="Tables">Sign me up for email updates</label>
         </div>
-        <button class= Twobtn type="submit" name="submit-button">
+        <button id= firstbtn type="submit" name="submit-button">
             SUBMIT
         </button>
-        <button class= Twobtn type="reset" name="reset=button">RESET</button>
+        <button id= secondbtn type="reset" name="reset=button">RESET</button>
 
-        <p id=text><h3>Contact me for further infomation</h3>
+        <p id=text><h3>Contact me for further Information</h3>
              <p><a href="mailto:qyang1@babson.edu">Email </a></p>
 </body>
 </html>
