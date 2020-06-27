@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164627713-1"></script>
 <script>
@@ -14,7 +18,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopify Process</title>
-    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <style>
         
@@ -24,29 +27,26 @@
 
 h1{text-align: center;font-size: 60px;height: 100%;padding-top: 0px; margin-top: 0rem;font-family: 'Montserrat', sans-serif;}
 li:hover{background-color: lightgray;}
-#green{color:green;}
 .red{color: red;}
 .bold{font-weight: bold;}
 
+
 .navigation ul{height: 70%; color: black; margin-left: 50px;}
-.navigation a li{height: 70%;display:block;float:left; padding:0px 12px; position: relative; text-align: center;color: black;}
-#nav{width:100%;text-align: center;margin-left:250px;margin-right: auto;margin-top: -30px;font-family: 'Montserrat', sans-serif;}
-li.blue:hover{color: blue;}
- button{background-color: white;border: white 0px ;}
+        .navigation a li{height: 70%;display:block;float:left; padding:0px 12px; position: relative; text-align: center;color: black;}
+        #nav{width:100%;text-align: center;margin-left:300px;margin-top: -30px;font-family: 'Montserrat', sans-serif;position:absolute;}
+        button{background-color: white;border: white  ;}
 
-li.green:hover{color:greenyellow}
-#brown:hover{color:brown}
-#red:hover{color: red;}
 
-    .environment{float: left; font-size: 25px; font-family: 'Montserrat', sans-serif;margin-left: 150px;margin-top: 30px;}
+   .environment{float: left; font-size: 25px; font-family: 'Montserrat', sans-serif;margin-left: 150px;margin-top: 30px;}
     #body{margin-left: 150px;margin-right: 150px;}
-    #shop{margin-left: 150px;margin-right: 150px; margin-top: 20px;margin-bottom: 20px;}
+    #shop{margin-left: 150px; margin-top: 20px;margin-bottom: 20px;}
     .heading{float: left; font-size: 25px; font-family: 'Montserrat', sans-serif;margin-left: 150px;margin-top: 30px;}
-            #body{margin-left: 150px;margin-right: 150px;}
-            .shop{margin-left: 150px;margin-right: 150px; margin-top: 20px; margin-bottom: 20px;}
-            .text{margin-left: 150px;margin-right: 250px;font-family: 'Montserrat', sans-serif;line-height: 2;text-indent: 50px;}
+            #body{margin-left: 150px;}
+            .shop{margin-left: 150px; margin-top: 20px; margin-bottom: 20px;}
+            .text{margin-left: 150px;margin-right: 150px;font-family: 'Montserrat', sans-serif;line-height: 2;text-indent: 50px;}
             .text2{margin-top: 50px;margin-left: 150px;margin-right: 250px;font-family: 'Montserrat', sans-serif;line-height: 2;text-indent: 10px;}
             #theme{margin-left: 10x;margin-right: 150px; margin-top: 60px; margin-bottom: 20px;}
+            
 
 
     </style>
@@ -67,28 +67,33 @@ li.green:hover{color:greenyellow}
     <a href="traffic.html"><li id=drive>Driving Traffic</span></li></a>
     <a href="contactpage.html"><li id=contact>Contact</span></li></a>
     <a href="sitemap.html"><li id=sitemap>Sitemap</span></li></a>
-</ul></div>
 
-  <div> <button><img src="images/search.png"height=20px></button>
+</ul>
+
+<button><img src="images/search.png"height=20px></button>
+</div> <br>
+
+    
 
     <script>
 
         function click(){
-            console.log("Done");
+            //console.log("Done");
             let userInput = prompt("Which page would you like to go?");}
              document.querySelector("button").onclick=function(){click();}
             if (userInput==="contact"){document.getElementById("contact").href="contactpage.html"}
              
     </script>
 <hr>   
-</body>
+
+ </body>
 <div id=body>
     <h1 class=environment> The Guide to web design.</h1><br><br><br><br>
     <p class=text>“If you’re trying to create a company, it’s like baking a cake. You have to have all the ingredients in the right proportion.”
         Not only do you need ALL the ingredients… you need them in the right proportion.
         If you make a cake and it sucks, something went wrong. Either you had a terrible recipe, used the wrong ingredients, or used the wrong proportion of the ingredients you had. Website design is one of the 
         most important elements to a E-commerce business. It communicates brand and it determines wheather or not someone is going to buy from you. 
-        This is what I look like when I'm building my store. <img class=shop src="images/baby.png" title="search" alt="photo" height="500%" width="70%"> </p> 
+        This is what I look like when I'm building my store. <img id=baby src="images/baby.png" title="search" alt="photo"  width="100%"> </p> 
     
         <h1 class=environment>1. Choose the best theme for your site </h1><br><br><br><br>
         <h4 class=text>First and foremost, you need to pick the right theme. Your theme is the backbone of your site and will directly affect the atmosphere, 
