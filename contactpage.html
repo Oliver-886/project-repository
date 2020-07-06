@@ -74,14 +74,23 @@ li:hover{background-color: lightgray;}
 
 
     <script>
-
+//still trying to figure out how to switch page with the search button
         function click(){
             console.log("Done");
             let userInput = prompt("Which page would you like to go?");}
-             document.querySelector("button").onclick=function(){click();}
-            if (userInput==="contact"){document.getElementById("contact").href="contactpage.html"}
-             
-    </script>
+             document.getElementById("btn").onclick=function(){click();
+            };
+
+        function validate(){
+        let myForm =document.querySelector("form")
+        let Name = myForm.name.value
+      // if (Name.length === 0){
+               alert("Please enter your name")
+               //
+        };
+       document.getElementById("firstbtn").onclick= validate
+</script>
+        
 
    
 </body>
@@ -94,13 +103,14 @@ li:hover{background-color: lightgray;}
     <fieldset class=set>
         <legend id=info>Your Information:</legend>
         
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"placeholder="Enter your name here"><br>
+        <label for="name">Name:
+        <input type="text" id="Name" name="name"placeholder="Enter your name here"><br>
+    </label>
         
 
-        <label for="email">Email:</label>
+        <label for="email">Email:
         <input type="text" id="email" name="email"placeholder="Enter your email here">
-        
+    </label>
     
       </fieldset><br>
 
@@ -144,12 +154,15 @@ li:hover{background-color: lightgray;}
             checked />
             <label for="Tables">Sign me up for email updates</label>
         </div>
-        <button id= firstbtn type="submit" name="submit-button">
+
+        <button id="firstbtn" type="submit" name="submit-button">
             SUBMIT
         </button>
         <button id= secondbtn type="reset" name="reset=button">RESET</button>
 
         <p id=text><h3>Contact me for further Information</h3>
              <p><a href="mailto:qyang1@babson.edu">Email </a></p>
+
+
 </body>
 </html>

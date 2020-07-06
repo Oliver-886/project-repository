@@ -160,7 +160,7 @@
         margin-right: 150px;
         margin-top: 60px;
         margin-bottom: 20px;
-        border-color:solid black 2px thick;
+        border: 3px solid black;
       }
       .buttons{
           font-family: "Montserrat", sans-serif; 
@@ -283,16 +283,17 @@ function changeImage(){
     textchange.innerText="Theme overview";
 };
 clicktheme.onclick= changeImage;
-
 function changeImage1(){
     Image.src="images/district.jpg";
     textchange.innerText="District Theme";
+     document.getElementById("theme").style.border = "3px solid red";
 };
 clickdistrict.onclick= changeImage1;
 
 function changeImage3(){
     Image.src="images/fashion.jpg";
     textchange.innerText="Fashion Theme"
+    document.getElementById("theme").style.border = "3px solid blue";
 };
 
 clickfashion.onclick= changeImage3;
@@ -300,8 +301,27 @@ clickfashion.onclick= changeImage3;
 function changeImage4(){
     Image.src="images/venue.jpg"
     textchange.innerText="Venue Theme"
+    document.getElementById("theme").style.border = "3px solid gray";
 }
 clickvenue.onclick= changeImage4
+
+function enlarge(){
+    let x = document.getElementById("baby");
+    let w = x.width;
+    w = w * 1.2;
+    x.width = w; 
+}
+
+document.getElementById("baby").onmouseover = enlarge
+
+function reduce(){
+    let x = document.getElementById("baby");
+    let w = x.width;
+    w = w/1.2;
+    x.width = w; 
+}
+
+document.getElementById("baby").onmouseout = reduce
 </script>
     <h1 class="environment">2. Avoid clutter (cognitive overload)</h1>
     <br /><br /><br /><br />

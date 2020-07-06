@@ -57,6 +57,12 @@ background-color: white;
 position: relative;
 padding-bottom: 50px;
 }
+#form{
+    margin-left: 37%;
+    border-radius: 15%;
+}
+
+
     </style>
       
 </head>
@@ -104,9 +110,27 @@ padding-bottom: 50px;
 <a class="map" href="webdesign.html"><h3>Web Design</h3></a>
 <a class="map" href="marketing.html"><h3>Marketing & Promotion</h3></a>
 <a class="map" href="traffic.html"><h3>Driving Traffic</h3></a>
-<a class="map" href="Contact.html"><h3>Contact Us</h3></a>
+<a class="map" href="contactpage.html"><h3>Contact Us</h3></a>
 <a class="map" href="creditpage.html"><h3>Credit page</h3></a>
 <br><br>
+<div id= form>
+<form id=for>
+<input size="50" id="user" type="text" placeholder="reminder">
+</form>
+</div>
+<script>
+let input1=document.getElementById("user")
+function focus(){input1.value="Thank you for checking my website"
+};
+
+function blur(){
+    input1.value="Don't forget to contact me if you have any questions"
+
+}
+document.getElementById("user").onfocus = focus
+document.getElementById("user").onblur = blur
+</script><br>
+
 
 <p class=text1>"I, Oliver Yang, pledge my honor that I have neither received nor provided unauthorized assistance during
      the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein."</p>
