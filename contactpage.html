@@ -65,9 +65,9 @@ li:hover{background-color: lightgray;}
     <a href="index.html"><li id=home>Home</li></a>
     <a href="webdesign.html"><li id=web >Web Design</li></a>
     <a href="marketing.html"><li id=marketing>Marketing & Promotion </li></a>
-    <a href="traffic.html"><li id=drive>Driving Traffic</span></li></a>
-    <a href="contactpage.html"><li id=contact>Contact</span></li></a>
-    <a href="sitemap.html"><li id=sitemap>Sitemap</span></li></a>
+    <a href="traffic.html"><li id=drive>Driving Traffic</li></a>
+    <a href="contactpage.html"><li id=contact>Contact</li></a>
+    <a href="sitemap.html"><li id=sitemap>Sitemap</li></a>
 </ul>
 
    <button id="btn"><img src="images/search.png"height=20px></button> </div> <br>
@@ -80,15 +80,6 @@ li:hover{background-color: lightgray;}
             let userInput = prompt("Which page would you like to go?");}
              document.getElementById("btn").onclick=function(){click();
             };
-
-        function validate(){
-        let myForm =document.querySelector("form")
-        let Name = myForm.name.value
-      // if (Name.length === 0){
-               alert("Please enter your name")
-               //
-        };
-       document.getElementById("firstbtn").onclick= validate
 </script>
         
 
@@ -155,14 +146,21 @@ li:hover{background-color: lightgray;}
             <label for="Tables">Sign me up for email updates</label>
         </div>
 
-        <button id="firstbtn" type="submit" name="submit-button">
-            SUBMIT
-        </button>
+        <button id="firstbtn" type="submit" name="submit=button">SUBMIT </button>
         <button id= secondbtn type="reset" name="reset=button">RESET</button>
 
         <p id=text><h3>Contact me for further Information</h3>
              <p><a href="mailto:qyang1@babson.edu">Email </a></p>
 
+             <script>
+                function validate(){
+                    let myForm = document.querySelector("form")
+                    let name = myForm.name.value
+                    if (name.length === 0){
+                    alert("Please enter your name")};
 
+                }
+                document.getElementById("firstbtn").onclick=validate
+            </script>
 </body>
 </html>
